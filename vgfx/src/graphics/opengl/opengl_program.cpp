@@ -57,10 +57,13 @@ int32_t OpenGLProgram::create(const TString &vertex_shader, const TString &fragm
 
 
 int32_t OpenGLProgram::valid() {
-    return 0;
+    return valid_;
 }
 
 int32_t OpenGLProgram::use() {
+    if(!valid_)
+        return kErrorCodeInvalidArgument;
+    glUseProgram(program_);
     return 0;
 }
 
@@ -80,6 +83,7 @@ void OpenGLProgram::release() {
     if (program_ > 0)
         glDeleteProgram(program_);
     program_ = 0;
+    valid_ = false;
 }
 
 }//namespace vgfx

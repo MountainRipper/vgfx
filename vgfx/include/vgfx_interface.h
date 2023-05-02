@@ -11,6 +11,7 @@ const int32_t kErrorCodeInvalidResource     = -3;
 const int32_t kErrorCodeInternalError       = -4;
 const int32_t kErrorCodeAccessDenied        = -5;
 const int32_t kErrorCodeNotExists           = -6;
+const int32_t kErrorInvalidProgram          = -7;
 
 const int32_t kSuccessedAlreadyExists        = 1;
 //const int32_t kErrorCodeInvalidArgument     = -1;
