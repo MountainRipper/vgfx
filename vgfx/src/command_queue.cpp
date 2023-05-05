@@ -1,5 +1,5 @@
 #include "command_queue.h"
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 CommandQueue::CommandQueue()
@@ -8,4 +8,4 @@ CommandQueue::CommandQueue()
 }
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr

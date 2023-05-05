@@ -1,10 +1,10 @@
 #include "opengl_vao.h"
 
-namespace digitools::vgfx{
+namespace mr::vgfx{
 
 OpenGLVertexArray::OpenGLVertexArray()
 {
 
 }
 
-}//namespace digitools::vgfx
+}//namespace mr::vgfx

@@ -4,7 +4,7 @@
 
 #include "common.h"
 
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 class Engine;

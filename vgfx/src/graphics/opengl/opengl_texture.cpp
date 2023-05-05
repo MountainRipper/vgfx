@@ -1,12 +1,12 @@
 #include "opengl_texture.h"
 #include <stb/stb_image.h>
-namespace digitools::vgfx {
+namespace mr::vgfx {
 
 OpenGlTexture::OpenGlTexture() {
 
 }
 
-int32_t OpenGlTexture::create_from_file(const eastl::string &file_path) {
+int32_t OpenGlTexture::create_from_resource(const TString& resource_path) {
     return 0;
 }
 
@@ -18,18 +18,6 @@ int32_t OpenGlTexture::create_from_image_file(ITexture *texture, const char *ima
     return 0;
 }
 
-int32_t OpenGlTexture::create_from_compressed_texture(ITexture *texture, uint8_t *image, uint32_t size) {
-    return 0;
-}
-
-int32_t OpenGlTexture::create_from_compressed_texture_file(ITexture *texture, const char *image_file) {
-    return 0;
-}
-
-int32_t OpenGlTexture::create_from_platform_hardware_frame(ITexture *texture, uint8_t *image, int32_t width, int32_t height,
-                                                   HardareFrameType type) {
-    return 0;
-}
 
 int32_t OpenGlTexture::create_from_external(ITexture *texture, uint64_t texture_id) {
     return IGraphicTexture::create_from_external(texture, texture_id);
@@ -50,4 +38,4 @@ int32_t OpenGlTexture::release() {
     return 0;
 }
 
-}//namespace digitools::vgfx
+}//namespace mr::vgfx

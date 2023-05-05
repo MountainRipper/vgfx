@@ -14,7 +14,7 @@ enum class ImageFileType : int8_t{
     kImageFileTypeTGA,
     kImageFileTypeHDR
 };
-namespace digitools::vgfx {
+namespace mr::vgfx {
 
 //most of them from https://github.com/sindresorhus/file-type/blob/main/core.js, respect
 int32_t get_file_type_by_magic(const uint8_t *buf, std::string &type, std::string &mime) {
@@ -490,12 +490,10 @@ int32_t get_file_type_by_magic(const uint8_t *buf, std::string &type, std::strin
 };
 
 const char *ImageLoader::filetype(const uint8_t *image_data) {
-
-
     return "";
 }
 
-MemoryImage ImageLoader::local_from_file(const eastl::string &file_path) {
-    return {};
-}
-}//namespace digitools::vgfx
+//MemoryImage ImageLoader::local_from_file(const eastl::string &file_path) {
+//    return {};
+//}
+}//namespace mr::vgfx

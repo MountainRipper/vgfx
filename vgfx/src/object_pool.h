@@ -3,7 +3,7 @@
 
 #include "common.h"
 
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 template<typename T>
@@ -22,7 +22,7 @@ private:
 };
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr
 
 
 #endif // OBJECT_POOL_H

@@ -2,7 +2,7 @@
 #define VIDEOGFX_H
 #include "common.h"
 
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 class Displayer;

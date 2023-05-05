@@ -1,7 +1,7 @@
 #include "display.h"
 #include "engine.h"
 #include "graphics/opengl/opengl_headers.h"
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 Displayer::Displayer()
@@ -88,4 +88,4 @@ int32_t Displayer::initialize_vulkan(){
 
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr

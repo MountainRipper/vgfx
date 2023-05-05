@@ -1,7 +1,7 @@
 
 #include "opengl_program.h"
 
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 OpenGLProgram::OpenGLProgram() {
@@ -87,4 +87,4 @@ void OpenGLProgram::release() {
 }
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr

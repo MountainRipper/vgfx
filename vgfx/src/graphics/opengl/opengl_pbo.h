@@ -1,7 +1,7 @@
 #ifndef OPENGLPIXELBUFFER_H
 #define OPENGLPIXELBUFFER_H
 
-namespace digitools::vgfx {
+namespace mr::vgfx {
 
     class OpenGlPixelBuffer
     {
@@ -10,6 +10,6 @@ namespace digitools::vgfx {
     };
 
 
-}//namespace digitools
+}//namespace mr
 
 #endif // OPENGLPIXELBUFFER_H

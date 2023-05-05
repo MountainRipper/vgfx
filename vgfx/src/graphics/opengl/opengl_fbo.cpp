@@ -1,6 +1,6 @@
 #include "opengl_fbo.h"
 
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 OpenGlFrameBuffer::OpenGlFrameBuffer()
@@ -10,4 +10,4 @@ OpenGlFrameBuffer::OpenGlFrameBuffer()
 
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr

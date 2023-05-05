@@ -1,6 +1,6 @@
 #include "opengl_renderer.h"
 
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 OpenGlRender::OpenGlRender()
@@ -29,5 +29,5 @@ IGraphicVertexBuffer* OpenGlRender::create_vertexbuffer()
 }
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr
 

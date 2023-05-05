@@ -6,29 +6,15 @@
 #define VGFX_IMAGE_LOADER_H
 #include "../common.h"
 
-namespace digitools::vgfx{
-
-class MemoryImage{
-public:
-    MemoryImage()=default;
-private:
-    TSharedPtr<uint8_t> buffer_;
-    uint32_t  width_ = 0;
-    uint32_t  height_ = 0;
-    uint32_t  linesize[4];
-    uint32_t  plane[4];
-    uint8_t bpp_ = 0;
-    uint8_t channels_ = 0;
-    SoftwarePixelFormat format_ = SoftwarePixelFormat::kPixelFormatNone;
-};
+namespace mr::vgfx{
 
 
 class ImageLoader {
     static const char * filetype(const uint8_t* image_data);
-    static MemoryImage local_from_file(const TString& file_path);
+    //static MemoryImage local_from_file(const TString& file_path);
 };
 
-}//namespace digitools::vgfx
+}//namespace mr::vgfx
 
 
 #endif //VGFX_IMAGE_LOADER_H

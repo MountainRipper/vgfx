@@ -2,7 +2,7 @@
 #include "opengl_headers.h"
 #if defined(VGFX_OS_LINUX) || defined(VGFX_OS_BSD)
 
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 class GraphicContextGlxData{
@@ -76,6 +76,6 @@ int32_t GraphicContextGlx::initialize(const DisplayParameters &params)
 
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr
 
 #endif // defined(VGFX_OS_LINUX) || defined(VGFX_OS_BSD)

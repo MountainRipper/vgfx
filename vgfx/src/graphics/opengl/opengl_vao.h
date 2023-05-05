@@ -1,7 +1,7 @@
 #ifndef OPENGLVERTEXARRAY_H
 #define OPENGLVERTEXARRAY_H
 #include "common.h"
-namespace digitools::vgfx{
+namespace mr::vgfx{
 
 class OpenGLVertexArray : public  IGraphicVertexBuffer
 {
@@ -9,6 +9,6 @@ public:
     OpenGLVertexArray();
 };
 
-}//namespace digitools::vgfx
+}//namespace mr::vgfx
 
 #endif // OPENGLVERTEXARRAY_H

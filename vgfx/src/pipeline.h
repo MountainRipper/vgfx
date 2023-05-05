@@ -1,7 +1,7 @@
 #ifndef PIPELINE_H
 #define PIPELINE_H
 #include "common.h"
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 class Engine;
@@ -35,6 +35,6 @@ private:
 
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr
 
 #endif // PIPELINE_H

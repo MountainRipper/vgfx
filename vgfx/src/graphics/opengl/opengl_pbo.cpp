@@ -1,8 +1,8 @@
 #include "opengl_pbo.h"
 
-namespace digitools::vgfx {
+namespace mr::vgfx {
 
 OpenGlPixelBuffer::OpenGlPixelBuffer()
 = default;
 
-}//namespace digitools
+}//namespace mr

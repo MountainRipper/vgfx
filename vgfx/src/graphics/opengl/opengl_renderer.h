@@ -3,7 +3,7 @@
 
 #include "common.h"
 
-namespace digitools
+namespace mr
 {
 namespace vgfx
 {
@@ -21,7 +21,7 @@ public:
 
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr
 
 
 

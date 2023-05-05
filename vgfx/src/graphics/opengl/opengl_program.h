@@ -3,7 +3,7 @@
 #include "common.h"
 #include "opengl_headers.h"
 
-namespace digitools::vgfx {
+namespace mr::vgfx {
 
 class OpenGLProgram : public IGraphicProgram
 {
@@ -22,7 +22,7 @@ private:
     bool  valid_ = false;
 };
 
-}//namespace digitools::vgfx
+}//namespace mr::vgfx
 
 
 

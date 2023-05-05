@@ -3,7 +3,7 @@
 #include "display.h"
 #include "graphics/opengl/graphic_context_glx.h"
 
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 Pipeline::Pipeline(Engine &engine, bool threading)
@@ -58,4 +58,4 @@ int32_t Pipeline::execute()
 
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr

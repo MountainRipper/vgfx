@@ -1,7 +1,7 @@
 #include "engine.h"
 #include "pipeline.h"
 
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 Engine::Engine(Displayer &displayer)
@@ -26,4 +26,4 @@ Displayer &Engine::displayer()
 }
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr

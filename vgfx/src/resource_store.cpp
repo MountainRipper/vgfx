@@ -1,7 +1,7 @@
 #include <miniz.h>
 #include <filesystem>
 #include "resource_store.h"
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 
@@ -207,5 +207,5 @@ int32_t ResourceStore::release_resource(const char *resource_path){
 
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr
 

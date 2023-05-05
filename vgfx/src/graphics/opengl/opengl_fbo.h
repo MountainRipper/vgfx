@@ -1,7 +1,7 @@
 #ifndef OPENGLFRAMEBUFFER_H
 #define OPENGLFRAMEBUFFER_H
 
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 class OpenGlFrameBuffer
@@ -11,7 +11,7 @@ public:
 };
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr
 
 
 

@@ -13,7 +13,7 @@
     if(!func) fprintf(stderr,"function %s not found\n",AS_STR(func)); else fprintf(stderr,"function %s found:%p\n",AS_STR(func),func);
 
 
-namespace digitools::vgfx {
+namespace mr::vgfx {
 
 IObject::~IObject()= default;
 
@@ -92,4 +92,4 @@ IResourceStore *Global::create_resource_store() {
     return static_cast<IResourceStore*>(new ResourceStore()) ;
 }
 
-}//namespace digitools::vgfx
+}//namespace mr::vgfx

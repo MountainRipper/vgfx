@@ -2,7 +2,7 @@
 #define RESOURCESTORE_H
 #include "common.h"
 #include <filesystem>
-namespace digitools::vgfx {
+namespace mr::vgfx {
 
 enum class ResourceFileType : int32_t{
     kResourceTypeNone,
@@ -68,6 +68,6 @@ private:
 };
 
 
-}//namespace digitools::vgfx
+}//namespace mr::vgfx
 
 #endif // RESOURCESTORE_H

@@ -3,7 +3,7 @@
 
 #include "common.h"
 
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 class Displayer;
@@ -21,6 +21,6 @@ private:
 };
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr
 
 #endif // ENGINE_H

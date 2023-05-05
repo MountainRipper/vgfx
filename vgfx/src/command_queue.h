@@ -2,7 +2,7 @@
 #define COMMANDQUEUE_H
 #include "common.h"
 #include "object_pool.h"
-namespace digitools::vgfx {
+namespace mr::vgfx {
 
 enum class CommandType : int32_t{
 
@@ -107,6 +107,6 @@ private:
 };
 
 
-}//namespace digitools::vgfx
+}//namespace mr::vgfx
 
 #endif // COMMANDQUEUE_H

@@ -4,7 +4,7 @@
 #include <common.h>
 
 #if defined(VGFX_OS_LINUX) || defined(VGFX_OS_BSD)
-namespace digitools {
+namespace mr {
 namespace vgfx {
 
 class GraphicContextGlxData;
@@ -18,7 +18,7 @@ private:
 };
 
 }//namespace vgfx
-}//namespace digitools
+}//namespace mr
 
 #endif // defined(VGFX_OS_LINUX) || defined(VGFX_OS_BSD)
 #endif // GRAPHICCONTEXT_H

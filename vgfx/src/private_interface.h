@@ -3,7 +3,7 @@
 #include "vgfx_interface.h"
 #include "common.h"
 
-namespace digitools::vgfx {
+namespace mr::vgfx {
 
 #define VGFX_IMPLEMENT_OBJECT \
 public:                              \
@@ -124,12 +124,9 @@ public:
 
 class IGraphicTexture : public  IObject{
 public:
-    virtual int32_t create_from_file(const TString& file_path) = 0;
+    virtual int32_t create_from_resource(const TString& resource_path) = 0;
     virtual int32_t create_from_image(ITexture* texture,uint8_t* image,uint32_t size,int32_t width,int32_t height) = 0;
     virtual int32_t create_from_image_file(ITexture* texture,const char* image_file) = 0;
-    virtual int32_t create_from_compressed_texture(ITexture* texture,uint8_t* image,uint32_t size) = 0;
-    virtual int32_t create_from_compressed_texture_file(ITexture* texture,const char* image_file)    = 0;
-    virtual int32_t create_from_platform_hardware_frame(ITexture* texture,uint8_t* image,int32_t width,int32_t height,HardareFrameType type) = 0;
     virtual int32_t create_from_external(ITexture* texture,uint64_t texture_id);
 };
 
@@ -154,5 +151,5 @@ public:
     virtual int32_t execute() = 0;
 };
 
-}//namespace digitools::vgfx
+}//namespace mr::vgfx
 #endif // PRIVATE_INTERFACE_H
