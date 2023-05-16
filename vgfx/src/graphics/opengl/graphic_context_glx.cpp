@@ -27,7 +27,7 @@ int32_t GraphicContextGlx::initialize(const DisplayParameters &params)
     int usedFbId = -1;
     int r = glXQueryContext(glx_display, shared_context, GLX_FBCONFIG_ID, &usedFbId);
     if (r != 0) {
-        VGFX_FATAL("Failed to get GLX_FBCONFIG_ID from shared GL context. glXQueryContext return:{}",r);
+        MR_FATAL("Failed to get GLX_FBCONFIG_ID from shared GL context. glXQueryContext return:{}",r);
         return -1;
     }
     MR_TRACE("GraphicContextGlx initialize glXQueryContext return:{} get fbid:{}",r,usedFbId);
@@ -36,7 +36,7 @@ int32_t GraphicContextGlx::initialize(const DisplayParameters &params)
     GLXFBConfig* fbConfigs = glXGetFBConfigs(glx_display, 0, &numConfigs);
 
     if (fbConfigs == nullptr) {
-        VGFX_FATAL("Failed to get the available GLXFBConfigs.");
+        MR_FATAL("Failed to get the available GLXFBConfigs.");
         return -2;
     }
 
@@ -46,7 +46,7 @@ int32_t GraphicContextGlx::initialize(const DisplayParameters &params)
     for (int i = 0; i < numConfigs; ++i) {
         r = glXGetFBConfigAttrib(glx_display, fbConfigs[i], GLX_FBCONFIG_ID, &fbId);
         if (r != 0) {
-            VGFX_INFO("Failed to get GLX_FBCONFIG_ID for entry {}.", i );
+            MR_INFO("Failed to get GLX_FBCONFIG_ID for entry {}.", i );
             continue;
         }
 
@@ -57,7 +57,7 @@ int32_t GraphicContextGlx::initialize(const DisplayParameters &params)
     }
 
     if (fbIndex < 0) {
-        VGFX_FATAL("Failed to find an `GLXFBConfig` with the requested ID.");
+        MR_FATAL("Failed to find an `GLXFBConfig` with the requested ID.");
         return -3;
     }
 
@@ -70,7 +70,7 @@ int32_t GraphicContextGlx::initialize(const DisplayParameters &params)
     };
 
     auto mGLXContext = glXCreateContextAttribsARB(glx_display, mGLXConfig[0],shared_context, True, contextAttribs);
-    VGFX_INFO("GraphicContextGlx initialize glXCreateContextAttribsARB return:{} ",(void*)mGLXContext);
+    MR_INFO("GraphicContextGlx initialize glXCreateContextAttribsARB return:{} ",(void*)mGLXContext);
     return 0;
 }
 

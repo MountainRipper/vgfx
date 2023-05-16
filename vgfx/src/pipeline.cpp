@@ -37,7 +37,7 @@ int32_t Pipeline::initialize()
     int32_t ret = 0;
     if(owner_engine_.displayer().params().graphic_platform == GraphicPlatform::kGraphicPlatformGlx){
         #if defined(VGFX_OS_LINUX) || defined(VGFX_OS_BSD)
-            graphic_ = SharedPtr<IGraphicContext>(static_cast<IGraphicContext*>(new GraphicContextGlx()));
+            graphic_ = TSharedPtr<IGraphicContext>(static_cast<IGraphicContext*>(new GraphicContextGlx()));
             ret = graphic_->initialize(owner_engine_.displayer().params());
         #else
             MR_ERROR("System {} not support graphic platform glx",VGFX_OS_NAME);
