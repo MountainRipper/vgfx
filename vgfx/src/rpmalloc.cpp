@@ -20,7 +20,7 @@ void operator delete[](void* ptr, const std::nothrow_t&) EA_THROW_SPEC_DELETE_NO
     if(ptr)
         rpfree(ptr);
 }
-#if !defined(WIN32) && !defined(WIN64)
+#if !defined(WIN32) && !defined(WIN64) && !defined(_MSC_VER)
 void operator delete[](void* ptr) EA_THROW_SPEC_DELETE_NONE()
 {
     if(ptr)
