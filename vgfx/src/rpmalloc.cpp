@@ -21,19 +21,19 @@ void operator delete[](void* ptr, const std::nothrow_t&) EA_THROW_SPEC_DELETE_NO
         rpfree(ptr);
 }
 #if !defined(WIN32) && !defined(WIN64) && !defined(_MSC_VER)
-void operator delete[](void* ptr) EA_THROW_SPEC_DELETE_NONE()
-{
-    if(ptr)
-        rpfree(ptr);
-}
-//this is the allocter rewrite c++
-void* operator new(std::size_t sz)
-{
-    return rpmalloc(sz);
-}
-void operator delete(void* ptr) noexcept
-{
-    if(ptr)
-        rpfree(ptr);
-}
+//void operator delete[](void* ptr) EA_THROW_SPEC_DELETE_NONE()
+//{
+//    if(ptr)
+//        rpfree(ptr);
+//}
+////this is the allocter rewrite c++
+//void* operator new(std::size_t sz)
+//{
+//    return rpmalloc(sz);
+//}
+//void operator delete(void* ptr) noexcept
+//{
+//    if(ptr)
+//        rpfree(ptr);
+//}
 #endif
