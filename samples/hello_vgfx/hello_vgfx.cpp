@@ -63,6 +63,11 @@ void HelloVGFX::key_callback(int key, int type, int scancode, int mods)
 
 }
 
+void HelloVGFX::char_callback(const char *key, int type)
+{
+
+}
+
 void HelloVGFX::error_callback(int err, const char *desc)
 {
 }

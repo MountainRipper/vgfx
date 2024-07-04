@@ -3,7 +3,7 @@
 #include <mutex>
 #include <queue>
 #include <mrcommon/sdl_runner.h>
-
+#include <mrcommon/logger.h>
 using namespace mr;
 
 class HelloVGFX : public SDLShowcaseBase
@@ -21,6 +21,7 @@ public:
     virtual void button_callback(int bt,int type,int clicks,double x,double y) override;
     virtual void cursor_callback(double x, double y) override;
     virtual void key_callback(int key, int type,int scancode,int mods) override;
+    virtual void char_callback(const char* key, int type) override;
     virtual void error_callback(int err, const char *desc) override;
     virtual void resize_callback(int width, int height) override;
     virtual void command(std::string command) override;
