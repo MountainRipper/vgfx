@@ -16,7 +16,7 @@ endif()
 
 
 if(${MR_TARGET_OS} MATCHES "linux")
-    include_directories(/usr/include/drm)
+    # include_directories(/usr/include/drm)
     target_link_libraries(hello_vgfx  glad mrcommon imgui_stb spdlog SDL2 drm ssl X11)
 elseif(${MR_TARGET_OS} MATCHES "windows")
     if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
