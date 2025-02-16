@@ -57,6 +57,6 @@ add_library(vgfx STATIC
 
 target_include_directories(vgfx PRIVATE ${VGFX_DIR}/src ${VGFX_DIR}/third_party/include)
 target_include_directories(vgfx PUBLIC ${VGFX_DIR}/include)
-target_link_libraries(vgfx eastl glad spdlog rpmalloc minizip miniz stb yuv X11)
+target_link_libraries(vgfx glad spdlog yuv bgfx bimg bx)
 target_compile_definitions(vgfx PRIVATE VIDEOGFX_LIBRARY)
 

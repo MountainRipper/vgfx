@@ -69,6 +69,8 @@ message(STATUS "INFO:VGFX MAKE USE PLATFORM THIRD-PARTY LIBS:${MR_SEARCH_LIB_PAT
 #######################arch/os/3rd_party detect end#######################
 
 
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/prebuild/include")
+link_directories("${CMAKE_CURRENT_SOURCE_DIR}/prebuild/lib/mingw")
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/third_party)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/vgfx)
