@@ -2,9 +2,9 @@
 // Created by xuwei on 22-12-3.
 //
 #include "common.h"
-#include <rpnew.h>
-RpMallocInitializer malloc_initializer;
-
+// #include <rpnew.h>
+// RpMallocInitializer malloc_initializer;
+/*
 //this is the allocter what eastl need
 void* operator new[](size_t size, const char* pName, int flags, unsigned     debugFlags, const char* file, int line)
 {
@@ -20,6 +20,7 @@ void operator delete[](void* ptr, const std::nothrow_t&) EA_THROW_SPEC_DELETE_NO
     if(ptr)
         rpfree(ptr);
 }
+*/
 #if !defined(WIN32) && !defined(WIN64) && !defined(_MSC_VER)
 //void operator delete[](void* ptr) EA_THROW_SPEC_DELETE_NONE()
 //{
