@@ -27,8 +27,11 @@ if(MSVC)
     string(TOLOWER "${CMAKE_BUILD_TYPE}" MR_BUILD_TYPE)
 endif()
 
+include_directories("${CMAKE_CURRENT_SOURCE_DIR}/prebuild/include")
+
 if(${MR_TARGET_OS} MATCHES "linux")
     # include_directories(/usr/include/drm)
+    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/prebuild/lib/linux")
 elseif(${MR_TARGET_OS} MATCHES "windows")
     if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
         set(MR_COMPILER_VER "mingw")
@@ -40,6 +43,7 @@ elseif(${MR_TARGET_OS} MATCHES "windows")
         elseif ("${MSVC_TOOLSET_VERSION}" STREQUAL "141")
             set(MR_COMPILER_VER "msvc2017")
         endif()
+        link_directories("${CMAKE_CURRENT_SOURCE_DIR}/prebuild/lib/mingw")
     endif()
 elseif(${MR_TARGET_OS} MATCHES "darwin")
 
@@ -69,8 +73,7 @@ message(STATUS "INFO:VGFX MAKE USE PLATFORM THIRD-PARTY LIBS:${MR_SEARCH_LIB_PAT
 #######################arch/os/3rd_party detect end#######################
 
 
-include_directories("${CMAKE_CURRENT_SOURCE_DIR}/prebuild/include")
-link_directories("${CMAKE_CURRENT_SOURCE_DIR}/prebuild/lib/mingw")
+
 
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/third_party)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/vgfx)

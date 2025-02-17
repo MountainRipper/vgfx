@@ -1,6 +1,7 @@
 #ifndef PRIVATE_INTERFACE_H
 #define PRIVATE_INTERFACE_H
 #include "vgfx_interface.h"
+#include "string.h"
 #include "common.h"
 
 namespace mr::vgfx {
